@@ -16,6 +16,7 @@ module FurryMemory
     config.api_only = true
 
     config.generators do |g|
+      g.orm :active_record, primary_key_type: :uuid
       g.test_framework :rspec
       g.stylesheets false
       g.factory_bot true
