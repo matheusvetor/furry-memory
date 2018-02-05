@@ -12,9 +12,9 @@ gem 'puma', '~> 3.7'
 
 gem 'jsonb_accessor', '~> 1.0.0'
 
-gem 'sidekiq'
 gem 'redis'
 gem 'redis-rails'
+gem 'sidekiq'
 
 gem 'active_model_serializers'
 gem 'will_paginate'
