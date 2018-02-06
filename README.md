@@ -50,7 +50,7 @@ The build status can be followed by the following buttons
 
 ```bundle install```
 
-Sidekiq needs to be running for in conjunction with the application to perform background processing
+Sidekiq needs to be running beside the application to perform background processing
 
 ```bundle exec sidekiq```
 
