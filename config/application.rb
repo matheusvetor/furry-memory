@@ -15,6 +15,10 @@ module FurryMemory
 
     config.api_only = true
 
+    config.active_record.observers = Dir.glob('app/observers/*').map do |observer|
+      observer.gsub('app/observers/', '').gsub('.rb', '').to_sym
+    end
+
     config.generators do |g|
       g.orm :active_record, primary_key_type: :uuid
       g.test_framework :rspec
