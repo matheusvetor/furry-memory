@@ -15,6 +15,8 @@ module FurryMemory
 
     config.api_only = true
 
+    config.cache_store = :redis_store, "#{Rails.application.secrets.redis_url}/0/cache"
+
     config.active_record.observers = Dir.glob('app/observers/*').map do |observer|
       observer.gsub('app/observers/', '').gsub('.rb', '').to_sym
     end

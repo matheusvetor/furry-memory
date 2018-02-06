@@ -2,16 +2,22 @@
 
 This Project is hosted by [Heroku](https://frozen-tundra-59098.herokuapp.com/api/v1/pages)
 
-This API provide a simple html page parse content
+This API provide a simple html page parse content.
 
-## Dependências
+Postgresql is used as main database.
+
+Redis is used to store queue for background jobs and as cache to store ActiveModelSerializers fragments.
+
+Sidekiq is used to run background jobs.
+
+## Dependencies
 
 * rvm
 * ruby 2.5
 * postgresql (9.4 or greater)
-* redis (4 or greater)
+* redis (4 or greater) (queue and cache)
 
-## Testes Unitários
+## Tests
 
 Unit tests were written using Rspec.
 
