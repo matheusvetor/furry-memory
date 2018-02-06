@@ -3,6 +3,8 @@ ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
+require 'coveralls'
+Coveralls.wear!
 
 Dir[Rails.root.join('spec', 'support', '**', '*')].each { |f| require f }
 

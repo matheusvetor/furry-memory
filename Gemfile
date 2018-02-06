@@ -33,7 +33,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rubocop', require: false
   gem 'rubycritic', require: false
-  gem 'simplecov', require: false
 end
 
 group :development do
@@ -44,7 +43,9 @@ group :development do
 end
 
 group :test do
+  gem 'coveralls', require: false
   gem 'database_cleaner'
   gem 'fakeweb', github: 'chrisk/fakeweb'
   gem 'shoulda-matchers', '~> 3.1'
+  gem 'simplecov', require: false
 end
