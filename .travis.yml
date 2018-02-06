@@ -3,7 +3,6 @@ dist: trusty
 cache: bundler
 services:
   - postgresql
-  - elasticsearch
 rvm:
   - 2.5.0
 script:
