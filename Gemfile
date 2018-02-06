@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', '~> 5.1.4'
+gem 'rails-observers'
 
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
@@ -20,6 +21,8 @@ gem 'active_model_serializers'
 gem 'will_paginate'
 
 gem 'faker'
+
+gem 'validate_url', github: 'perfectline/validates_url'
 
 group :development, :test do
   gem 'brakeman', require: false
@@ -42,5 +45,6 @@ end
 
 group :test do
   gem 'database_cleaner'
+  gem 'fakeweb', github: 'chrisk/fakeweb'
   gem 'shoulda-matchers', '~> 3.1'
 end
