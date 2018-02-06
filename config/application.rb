@@ -1,11 +1,11 @@
 require_relative 'boot'
 
-require "rails"
-require "active_model/railtie"
-require "active_record/railtie"
-require "action_controller/railtie"
-require "action_view/railtie"
-require "rails/test_unit/railtie"
+require 'rails'
+require 'active_model/railtie'
+require 'active_record/railtie'
+require 'action_controller/railtie'
+require 'action_view/railtie'
+require 'rails/test_unit/railtie'
 
 Bundler.require(*Rails.groups)
 
@@ -20,7 +20,6 @@ module FurryMemory
     end
 
     config.generators do |g|
-      g.orm :active_record, primary_key_type: :uuid
       g.test_framework :rspec
       g.stylesheets false
       g.factory_bot true
