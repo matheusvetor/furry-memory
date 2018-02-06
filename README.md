@@ -8,8 +8,8 @@ This API provide a simple html page parse content
 
 * rvm
 * ruby 2.5
-* postgresql (9.4 or high)
-* redis (4 or high)
+* postgresql (9.4 or greater)
+* redis (4 or greater)
 
 ## Testes Unitários
 
@@ -30,19 +30,25 @@ Run rake to run every test suite
 This repository is configured to run the Continuous Integration scripts for each interaction.
 
 The build status can be followed by the following buttons
+
 [![Build Status](https://travis-ci.org/matheusvetor/furry-memory.svg?branch=master)](https://travis-ci.org/matheusvetor/furry-memory) [![Coverage Status](https://coveralls.io/repos/github/matheusvetor/furry-memory/badge.svg?branch=master)](https://coveralls.io/github/matheusvetor/furry-memory?branch=master)
 
 ## Run App
 
 ```git clone https://github.com/matheusvetor/furry-memory.git```
+
 ```cd furry-memory```
+
 ```rvm install ruby-2.5.0```
+
 ```bundle install```
 
 Sidekiq needs to be running for in conjunction with the application to perform background processing
+
 ```bundle exec sidekiq```
 
 Run the server
+
 ```rails s```
 
 ## Api
