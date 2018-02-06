@@ -21,6 +21,9 @@ Metrics/LineLength:
 Metrics/MethodLength:
   Max: 20
 
+Metrics/AbcSize:
+  Max: 20
+
 # Method name to be snake_case instead of CamelCase
 Naming/MethodName:
   EnforcedStyle: snake_case
