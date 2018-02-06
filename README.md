@@ -28,7 +28,8 @@ In addition to Rspec, other tools were used to measure the quality of the code:
 - rubycritic (Analyze code complexity)
 - simplecov (Analyzes the percentage of test coverage of the code)
 
-Run rake to run every test suite
+To run the test suite:
+
 ```bundle exec rake```
 
 ## Continuous Integration
