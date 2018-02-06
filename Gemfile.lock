@@ -4,13 +4,6 @@ GIT
   specs:
     fakeweb (1.3.0)
 
-GIT
-  remote: https://github.com/perfectline/validates_url.git
-  revision: b170db5a211b7e277c76727a46559c36b989e430
-  specs:
-    validate_url (1.0.2)
-      activemodel (>= 3.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -301,6 +294,9 @@ GEM
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     unicode-display_width (1.3.0)
+    validate_url (1.0.2)
+      activemodel (>= 3.0.0)
+      addressable
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -341,7 +337,7 @@ DEPENDENCIES
   simplecov
   spring
   spring-watcher-listen (~> 2.0.0)
-  validate_url!
+  validate_url
   will_paginate
 
 BUNDLED WITH

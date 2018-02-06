@@ -22,7 +22,7 @@ gem 'will_paginate'
 
 gem 'faker'
 
-gem 'validate_url', github: 'perfectline/validates_url'
+gem 'validate_url'
 
 group :development, :test do
   gem 'brakeman', require: false
